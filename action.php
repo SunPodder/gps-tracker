@@ -6,7 +6,7 @@
   //location accuracy
   $acc = $_POST['acc'];
   
-  //write downs all information in location.txt file
+  //write downs all information in locations.txt file
   $file = fopen('locations.txt', 'a');
   fwrite($file, "Latitude: ".$lat);
   fwrite($file, "\nLongitude: ".$long);
