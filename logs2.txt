@@ -1,0 +1,3 @@
+These location informations are collected from https://ip-api.com. 
+Location information may not be perfect/accurate. To get better accuracy, try to convince the target to turn on device location and give location access permission when page loads.
+
