@@ -22,7 +22,7 @@ banner(){
   \e[0m"
 }
 throwNgrok(){
-  printf "Ngrok install isn't installed. Please install it first, from \e[0m\e[1;93mhttps://ngrok.com"
+  printf "Ngrok isn't installed. Please install it first, from \e[0m\e[1;93mhttps://ngrok.com"
 }
 clear
 banner
